@@ -2,8 +2,8 @@
 basket =['apple', 'mango']
 
 print('''What would you like to do? 
-      a) remove items
-      b) add items
+      a) add items
+      b) remove items
       c) see items
       ''')
 
@@ -16,14 +16,14 @@ def removefrombasket(basket, x):
 def main():
     while True:
         choice = input("Enter Option: ")
-        if choice == "a":
+        if choice == "b":
             print(" ")
             print(basket)
             item = input("What would you like to remove? ")
             removefrombasket(basket, item)
             print("Removed!, Your new items are: " +str(basket))
             print(" ")
-        elif choice == "b":
+        elif choice == "a":
            print(" ")
            print(basket)
            item2 = input("What would you like to add?: ")
