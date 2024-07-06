@@ -1,0 +1,40 @@
+basket =['apple', 'mango']
+print("Fun Basket | [+] Loaded ")
+print('''What would you like to do? 
+      a) remove items
+      b) add items
+      c) see items
+      ''')
+
+def addtobasket(basket, y):
+    basket.append(y)
+
+def removefrombasket(basket, x):
+    basket.remove(x)
+
+def main():
+    while True:
+        choice = input("Enter Option: ")
+        if choice == "a":
+            print(" ")
+            print(basket)
+            item = input("What would you like to remove? ")
+            removefrombasket(basket, item)
+            print("Removed!, Your new items are: " +str(basket))
+            print(" ")
+        elif choice == "b":
+           print(" ")
+           print(basket)
+           item2 = input("What would you like to add?: ")
+           addtobasket(basket, item2)
+           print(" ")
+           print("Addded!, Your new items are: " +str(basket))
+        elif choice == "c":
+            print(basket)
+            print(" ")
+        elif choice != "a" or "b" or "c" or "d":
+            print("Please enter a valid option.")
+    
+
+if __name__ == "__main__":
+    main()
