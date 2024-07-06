@@ -1,3 +1,4 @@
+#made cuz bored
 basket =['apple', 'mango']
 print("Fun Basket | [+] Loaded ")
 print('''What would you like to do? 
